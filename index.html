@@ -11,9 +11,11 @@
 <script src="hello.js"></script>
 <script>
     Module.onRuntimeInitialized = () => {
-        const ptr = Module._say_my_name();
-        const name = UTF8ToString(ptr);
-        document.getElementById("name").innerText = name;
+        window.say_my_name = () => {
+            const ptr = Module._say_my_name();
+            const name = UTF8ToString(ptr);
+            document.getElementById("name").innerText = name;
+        };
     };
 </script>
 </html>

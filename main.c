@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    printf("hello, wasm!\n");
+    printf("Module Ready!\n");
     return 0;
 }
 
 const char* say_my_name() {
-    return "WebAssembly";
+    return "hello, wasm!";
 }
